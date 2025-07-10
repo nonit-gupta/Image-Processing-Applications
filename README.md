@@ -4,9 +4,8 @@ This project focuses on the automatic detection and classification of surface de
 
 ## Project Structure
 
-- `Steel_Defect_Detection_endeval.ipynb`: The main Jupyter Notebook containing the end-to-end process of data loading, model building, training, and evaluation.
-- `assignment/assignment2_imageproc.ipynb`: A supplementary notebook, likely containing earlier explorations of image processing techniques.
-- `Steel Surface Defect Detection_Report.docx`: A detailed report of the project.
+- `Steel_Defect_Detection.ipynb`: The main Jupyter Notebook containing the end-to-end process of data loading, model building, training, and evaluation.
+- `Steel_Defect_Detection_Report.docx`: A detailed report of the project.
 - `requirements.txt`: A list of Python dependencies required to run the project.
 
 ## Dataset
@@ -57,29 +56,3 @@ Two distinct approaches were investigated to tackle the defect detection problem
 The results indicate that the baseline CNN model performed better than the model trained on segmented images. The segmentation process, while intended to help the model focus on the defect, may have inadvertently removed useful contextual information from the images, leading to a slight degradation in performance.
 
 The final model provides a solid baseline for steel defect detection. Further improvements could be explored by using more complex architectures (like ResNet, VGG), extensive data augmentation, or more advanced segmentation techniques.
-
-## How to Run
-
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    cd <repository-name>
-    ```
-
-2.  **Install dependencies:**
-    Make sure you have Python installed. Then, install the required packages using pip.
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Set up the dataset:**
-    The notebook `Steel_Defect_Detection_endeval.ipynb` expects the dataset to be located in a specific Google Drive folder path (`/content/drive/MyDrive/Dataset/`). You will need to:
-    - Upload the dataset to your Google Drive.
-    - Or, modify the paths in the notebook (Cell 4) to point to the location of your `train`, `valid`, and `test` data directories.
-
-4.  **Run the notebook:**
-    Launch Jupyter Notebook and open `Steel_Defect_Detection_endeval.ipynb`.
-    ```bash
-    jupyter notebook
-    ```
-    You can then run the cells sequentially to see the entire workflow, from data loading to model evaluation. 
